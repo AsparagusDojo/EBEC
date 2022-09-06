@@ -34,7 +34,9 @@ Academic Integrity Statement:
 
 
 def main():
+    """Takes input from user"""
     name = input("What is your name? ")
+    """Return results"""
     print(f"Hello {name}!")
 
 
