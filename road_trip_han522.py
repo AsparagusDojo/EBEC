@@ -1,6 +1,6 @@
 """
 Author: Near Han, han522@purdue.edu
-Assignment: 00.1 - Hello User
+Assignment: 01.1 - Road Trip
 Date: 09/04/2022
 
 Description:
@@ -44,7 +44,7 @@ def main():
     #Calculate fuel cost
     cost = int(2 * dis * price / mpg)
     #Return
-    print(f"\nThe fuel cost for this trip is approximately ${cost}")
+    print(f"\nThe fuel cost for this trip is approximately ${cost}.")
 
 
 """Do not change anything below this line."""
