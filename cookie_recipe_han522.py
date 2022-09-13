@@ -37,7 +37,7 @@ def main():
     #Ask number of cookies being made
     number = int(input("How many cookies do you want to make? "))
     #Return results
-    print(f"To make {number:,} cookies, you will need: ")
+    print(f"To make {number:,} cookies, you will need:")
     #Number of cups of butter
     butter = number / 48 * 1.25
     print(f"{butter:10,.2f} cups of butter")
