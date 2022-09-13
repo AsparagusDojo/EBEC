@@ -4,8 +4,8 @@ Assignment: 01.3 - Cookie Recipe
 Date: 09/04/2022
 
 Description:
-    This program intakes user's name from a specific selection pool and
-    return greeting to the user.
+    This program intakes user's request of how many cookies to made and calculate
+    the required materials of butter, sugar and flour respectively.
 
 Contributors:
     N/A
@@ -38,12 +38,15 @@ def main():
     number = int(input("How many cookies do you want to make? "))
     #Return results
     print(f"To make {number:,} cookies, you will need: ")
+    #Number of cups of butter
     butter = number / 48 * 1.25
-    print(f"  {butter:,.2f} cups of butter")
+    print(f"{butter:10,.2f} cups of butter")
+    #Number of cups of sugar
     sugar = number / 48 * 1.5
-    print(f"  {sugar:,.2f} cups of sugar")
+    print(f"{sugar:10,.2f} cups of sugar")
+    #Number of cups of flour
     flour = number / 48 * 2.5
-    print(f"  {flour:,.2f} cups of flour")
+    print(f"{flour:10,.2f} cups of flour")
 
 
 """Do not change anything below this line."""
