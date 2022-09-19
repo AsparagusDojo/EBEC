@@ -52,7 +52,6 @@ def main():
         print(f"  The total price to purchase {purchase} packages is ${price:,.2f}.")
     elif(purchase >= 4 and purchase <= 39):
         discount = 10
-         #Calculating the toal price of the package purchased
         price = purchase * 880 * (1 - discount / 100)
         print(f"  {discount}% discount applied.")
         print(f"  The total price to purchase {purchase} packages is ${price:,.2f}.")
@@ -66,7 +65,6 @@ def main():
         price = purchase * 880 * (1 - discount / 100)
         print(f"  {discount}% discount applied.")
         print(f"  The total price to purchase {purchase} packages is ${price:,.2f}.")
-    #If the purchase number is larger than 1000
     else:
         discount = 42
         price = purchase * 880 * (1 - discount / 100)
