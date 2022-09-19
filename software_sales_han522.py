@@ -47,7 +47,6 @@ def main():
         print("  No discount applied.")
          #Calculating the toal price of the package purchased
         price = purchase * 880
-        #Output results of total price
         print(f"  The total price to purchase {purchase} packages is ${price:,.2f}.")
     elif(purchase >= 4 and purchase <= 39):
         discount = 10
