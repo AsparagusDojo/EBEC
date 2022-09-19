@@ -37,7 +37,6 @@ from os import NGROUPS_MAX
 
 
 def main():
-#Asks user the amount of package they are purchasing
     purchase = int(input("How many packages will be purchased: "))
 
     #Determine the discount amount by the number that user is purchasing
