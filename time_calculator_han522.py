@@ -50,7 +50,7 @@ def main():
     if sec < 60:
         print(f"  {sec} seconds is less than one minute.")
     else:
-        print(f'  {sec} seconds equals ', end = '')
+        print(f'  {sec:,} seconds equals ', end = '')
         if days:
             print(f'{days} day(s)', end = '')
 
