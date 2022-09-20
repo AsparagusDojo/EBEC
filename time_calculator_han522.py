@@ -60,7 +60,7 @@ def main():
                     print(', ', end = '')
                 else:
                     print(' and ', end = '')
-            print(f'{hours} hours(s)', end = '')
+            print(f'{hours} hour(s)', end = '')
 
         if mins:
             if hours or days:
@@ -68,11 +68,11 @@ def main():
                     print(', ', end = '')
                 else:
                     print(' and ', end = '')
-            print(f'{mins} minutes(s)', end = '')
+            print(f'{mins} minute(s)', end = '')
         if secleft:
             if mins or hours or days:
                 print(' and ', end = '')
-            print(f'{secleft} seconds(s)', end = '')
+            print(f'{secleft} second(s)', end = '')
         print('.')
 
 
