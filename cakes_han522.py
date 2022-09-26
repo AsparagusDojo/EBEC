@@ -51,7 +51,6 @@ def main():
         for k in range(0, 2*i+1):
             print("*", end = "")
         print("]")
-        print("\r")
  
     # for i in range(n): print(f"{'*'*(2*i+1):>{n+i}}")
 
