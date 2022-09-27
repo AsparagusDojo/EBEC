@@ -43,7 +43,7 @@ def main():
     for i in range(0, days + 1):
         #Calculates total populations
         total = start * rate ** i
-        print(f"{i:3}   {total:11.3f}")
+        print(f"{i:3}   {total:11,.3f}")
 
 """Do not change anything below this line."""
 if __name__ == "__main__":
