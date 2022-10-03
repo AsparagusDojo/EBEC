@@ -40,7 +40,7 @@ def main():
     #Time starts at 5 seconds
     start = 5
     print("Time (s)  Distance (m)")
-    print("----------------------\n")
+    print("----------------------")
     #Track the results from 5 to 50 seconds
     while start <= 50:
         falling_dist(start)
