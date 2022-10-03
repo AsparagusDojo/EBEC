@@ -43,7 +43,7 @@ def main():
     print("----------------------")
     #Track the results from 5 to 50 seconds
     while time <= 50:
-        falling_dist(time)
+        distance = falling_dist(time)
         print(f"{time:8}  {distance:12.1f}")
         time += 5
 
