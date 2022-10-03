@@ -38,14 +38,14 @@ def falling_dist(time):
 
 def main():
     #Time starts at 5 seconds
-    start = 5
+    time = 5
     print("Time (s)  Distance (m)")
     print("----------------------")
     #Track the results from 5 to 50 seconds
-    while start <= 50:
-        falling_dist(start)
-        print(f"{start:8}  {distance:12.1f}")
-        start += 5
+    while time <= 50:
+        falling_dist(time)
+        print(f"{time:8}  {distance:12.1f}")
+        time += 5
 
 
 """Do not change anything below this line."""
