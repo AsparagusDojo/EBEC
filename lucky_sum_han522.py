@@ -51,7 +51,7 @@ def main():
     var2 = int(input("Enter the second integer: "))
     sum = lucky_sum(var1, var2)
     #Output result
-    print(f"The sum of the lucky numbers is {sum:,}")
+    print(f"The sum of the lucky numbers is {sum:,}.")
 
 
 """Do not change anything below this line."""
