@@ -32,7 +32,8 @@ Academic Integrity Statement:
 
 """Write new functions below this line (starting with unit 4)."""
 #Function for checking is the score entered is valid
-def get_valid_score(grade):
+def get_valid_score():
+    grade = int(input("Enter a score: "))
     while grade < 0 or grade > 100:
         print("  Invalid Input. Please try again.")
         grade = int(input("Enter a score: "))
@@ -66,8 +67,7 @@ def determine_grade(avg):
 def main():
     valid = [0, 0, 0, 0, 0]
     for i in range(0,5):
-        grade = int(input("Enter a score: "))
-        valid[i] = get_valid_score(grade)
+        valid[i] = get_valid_score( )
         letter = determine_grade(valid[i])
         print(f"  The letter grade for {valid[i]:.1f} is {letter}.")
     
