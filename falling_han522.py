@@ -30,7 +30,7 @@ Academic Integrity Statement:
 
 
 """Write new functions below this line (starting with unit 4)."""
-def falling(time):
+def falling_dist(time):
     distance = 8.87 * (time ** 2) / 2
     print(f"{time:8}  {distance:12.1f}")
 
@@ -41,7 +41,7 @@ def main():
     print("----------------------")
     #Track the results from 5 to 50 seconds
     while start <= 50:
-        falling(start)
+        falling_dist(start)
         start += 5
 
 
