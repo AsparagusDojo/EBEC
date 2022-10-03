@@ -41,7 +41,8 @@ def get_valid_score(grade):
 #Define the average score of the grades entered
 def calc_average(valid):
     sum = 0
-    for i in range(0,5):
+    scope = len(valid)
+    for i in range(0, scope):
         sum += valid[i]
     avg = sum / 5
     return avg
@@ -65,15 +66,15 @@ def determine_grade(avg):
 def main():
     valid = [0, 0, 0, 0, 0]
     for i in range(0,5):
-        score = int(input("Enter a score: "))
-        valid[i] = get_valid_score(score)
+        grade = int(input("Enter a score: "))
+        valid[i] = get_valid_score(grade)
         letter = determine_grade(valid[i])
-        print(f"  The letter grade for {valid[i]} is {letter}.")
+        print(f"  The letter grade for {valid[i]:.1f} is {letter}.")
     
     avg = calc_average(valid)
     final = determine_grade(avg)
-    print("\n")
     #Output Results
+    print("\n")
     print("Results:")
     print(f"  The average score is {avg:.2f}.")
     print(f"  The letter grade for {avg:.2f} is {final}.")
