@@ -31,8 +31,10 @@ Academic Integrity Statement:
 
 """Write new functions below this line (starting with unit 4)."""
 def falling_dist(time):
+    global distance
     distance = 8.87 * (time ** 2) / 2
-    print(f"{time:8}  {distance:12.1f}")
+    return distance
+    #print(f"{time:8}  {distance:12.1f}")
 
 def main():
     #Time starts at 5 seconds
@@ -42,6 +44,7 @@ def main():
     #Track the results from 5 to 50 seconds
     while start <= 50:
         falling_dist(start)
+        print(f"{start:8}  {distance:12.1f}")
         start += 5
 
 
