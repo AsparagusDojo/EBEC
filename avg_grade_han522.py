@@ -33,10 +33,10 @@ Academic Integrity Statement:
 """Write new functions below this line (starting with unit 4)."""
 #Function for checking is the score entered is valid
 def get_valid_score():
-    grade = int(input("Enter a score: "))
+    grade = float(input("Enter a score: "))
     while grade < 0 or grade > 100:
         print("  Invalid Input. Please try again.")
-        grade = int(input("Enter a score: "))
+        grade = float(input("Enter a score: "))
     return grade
 
 #Define the average score of the grades entered
