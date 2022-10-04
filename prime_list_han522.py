@@ -62,7 +62,7 @@ def main():
         if j == len(list) - 1:
             print(list[j])
         else:
-            print(f"{list[j]}, ", end = " ")   
+            print(f"{list[j]}, ", end = "")   
    
     
    
