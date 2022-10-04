@@ -36,12 +36,12 @@ def is_prime(num):
    # check for factors
         for i in range(2,num):
             if (num % i) == 0:
-                return 0
+                return False
                 break
             else:
-                return 1
+                return True
     else:
-        return 0
+        return False
 
 
 def main():
