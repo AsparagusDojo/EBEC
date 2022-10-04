@@ -65,17 +65,20 @@ def determine_grade(avg):
 
 
 def main():
+    #Determine a list for storing thr 5 score
     valid = [0, 0, 0, 0, 0]
     for i in range(0,5):
         valid[i] = get_valid_score( )
         letter = determine_grade(valid[i])
-        print(f"  The letter grade for {valid[i]:.1f} is {letter}.")
+        if i == 4:
+            print(f"  The letter grade for {valid[i]:.1f} is {letter}.\n")
+        else:
+             print(f"  The letter grade for {valid[i]:.1f} is {letter}.")
     
     avg = calc_average(valid)
     final = determine_grade(avg)
     #Output Results
-    print("\n")
-    print("Results:")
+    print("\nResults:")
     print(f"  The average score is {avg:.2f}.")
     print(f"  The letter grade for {avg:.2f} is {final}.")
 
