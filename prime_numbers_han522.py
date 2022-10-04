@@ -27,14 +27,14 @@ Academic Integrity Statement:
 """
 
 """Import additional modules below this line (starting with unit 6)."""
-
+import math
 
 """Write new functions below this line (starting with unit 4)."""
 #Function to check if the number is prime
 def is_prime(num):
     if num > 1:
    # check for factors
-        for i in range(2,num // 2):
+        for i in range(2, int(math.sqrt(num)) + 1):
             if (num % i) == 0:
                 return False
                 break
