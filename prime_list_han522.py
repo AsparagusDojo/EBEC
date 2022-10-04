@@ -52,12 +52,12 @@ def main():
     start = 2
     #Takes upper limit from user
     print(f"The primes up to {limit} are:", end = " ")
-    #Checking and collecting list of prim
+    #Checking and collecting list of prime
     for i in range(2, limit + 1):
         check = is_prime(i)
         if check:
             list.append(i)
-
+    #Printing out the list of prime
     for j in range(0, len(list)):
         if j == len(list) - 1:
             print(list[j])
