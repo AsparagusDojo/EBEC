@@ -69,11 +69,8 @@ def main():
     valid = [0, 0, 0, 0, 0]
     for i in range(0, 5):
         valid[i] = get_valid_score( )
-        letter = determine_grade(valid[i])
-        if i == 4:
-            print(f"  The letter grade for {valid[i]:.1f} is {letter}.\n")
-        else:
-             print(f"  The letter grade for {valid[i]:.1f} is {letter}.")
+        letter = determine_grade(valid[i])  
+        print(f"  The letter grade for {valid[i]:.1f} is {letter}.")
     
     avg = calc_average(valid)
     final = determine_grade(avg)
