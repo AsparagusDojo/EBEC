@@ -45,7 +45,7 @@ def calc_average(valid):
     scope = len(valid)
     for i in range(0, scope):
         sum += valid[i]
-    avg = sum / 5
+    avg = sum / scope
     return avg
 
 #Determine the letter grade based on average
