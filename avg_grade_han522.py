@@ -67,7 +67,7 @@ def determine_grade(avg):
 def main():
     #Determine a list for storing thr 5 score
     valid = [0, 0, 0, 0, 0]
-    for i in range(0,5):
+    for i in range(0, 5):
         valid[i] = get_valid_score( )
         letter = determine_grade(valid[i])
         if i == 4:
