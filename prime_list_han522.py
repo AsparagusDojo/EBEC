@@ -51,7 +51,7 @@ def main():
     limit = int(input("Enter a positive integer: "))
     start = 2
     #Takes upper limit from user
-    print(f"The primes up to {limit} are: ", end = " ")
+    print(f"The primes up to {limit} are:", end = " ")
     #Checking and collecting list of prim
     for i in range(2, limit + 1):
         check = is_prime(i)
