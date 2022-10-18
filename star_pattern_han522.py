@@ -70,7 +70,6 @@ def main():
             turn += 1
     end_fill()
     
-    right(theta)
 
     
 """Do not change anything below this line."""
