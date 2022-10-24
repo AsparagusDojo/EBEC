@@ -31,13 +31,16 @@ Academic Integrity Statement:
 import random
 
 """Write new functions below this line (starting with unit 4)."""
-
+def random_number (num):
+    start = 10 ** (num-1)
+    end = (10 ** num)-1
+    return random.randint(start, end)
 
 def main():
     #Generates a random 2 digits number
-    two = random.randint(10, 99)
+    two = random_number(2)
     #Generates a random 3 digits number
-    three = random.randint(100, 999)
+    three = random_number(3)
     #Print the quiz
     print(f"{two: 5}")
     print(f"+ {three}")
