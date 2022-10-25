@@ -78,14 +78,14 @@ def main():
     results = get_winner(comp, user)
     #Game keep going till tie is broken
     while results == 'tie':
-        print("It's a tie. Starting over.\n")
+        print("  It's a tie. Starting over.\n")
         comp = get_computer_choice()
         user = get_player_choice()
         print(f"  The computer chose {comp}, and you chose {user}.")
         results = get_winner(comp, user)
     if results == 'computer':
         print(f"  {comp} beats {user}")
-        print("  You lost. Better luck next time.")
+        print("  You lost.  Better luck next time.")
     elif results == 'player':
         print(f"  {user} beats {comp}")
         print("  You won the game!")
