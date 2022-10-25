@@ -48,7 +48,7 @@ def main():
     setpos(0, 0)
     down()
     # Draw a spiral 
-    for i in range(0, 1080, 5):
+    for i in range(0, 1081, 5):
         #Convert degree to randian
         t = math.radians(i)
         #The given functions
