@@ -44,9 +44,6 @@ def start():
 
 
 def main():
-    up()
-    #setpos(0, 0)
-    down()
     # Draw a spiral 
     for i in range(0, 1081, 10):
         #Convert degree to randian
